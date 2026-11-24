@@ -21,16 +21,126 @@
   --accent-purple: #591B98;
 
   /* ---------- Tipografia ---------- */
-    /* ---------- Tipografia: família ---------- */
+  /* ---------- Tipografia: família ---------- */
   --font-family: 'Open Sans', sans-serif;
 
   /* ---------- Tipografia: tamanhos ---------- */
   --font-size-h1: 36px;
   --font-size-h2: 32px;
   --font-size-h3: 28px;
-  --font-size-base: 16px; /* headline, paragraph e subtitle */
+  --font-size-base: 16px;
+  /* headline, paragraph e subtitle */
 
   /* ---------- Tipografia: pesos ---------- */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+}
+
+* {
+  background-color: var(--background-default);
+}
+
+.header {
+  max-width: 1120px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 7px auto;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.description {
+  font-style: italic;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-primary);
+  margin: 40px auto;
+  max-width: 1120px;
+
+}
+
+.section-0,
+.section-1,
+.section-2,
+.section-3 {
+  max-width: 1120px;
+  margin: 40px auto;
+}
+
+.section-0,
+.section-1,
+.section-2,
+.section-3>p {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.headline {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--accent-orange);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.paragraph,
+li {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+img {
+  margin: 28px auto;
+}
+
+.bom-para {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  margin-top: 20px;
+}
+
+.accent-blue {
+  color: var(--accent-blue);
+  font-weight: var(--font-weight-bold);
+}
+
+.accent-pink {
+  color: var(--accent-pink);
+  font-weight: var(--font-weight-bold);
+}
+
+.accent-orange {
+  color: var(--accent-orange);
+  font-weight: var(--font-weight-bold);
+}
+
+.accent-purple {
+  color: var(--accent-purple);
+  font-weight: var(--font-weight-bold);
 }
